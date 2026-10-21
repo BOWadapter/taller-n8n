@@ -1,0 +1,10 @@
+{
+  "name": "Taller n8n",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "hostRequirements": { "cpus": 2, "memory": "8gb" },
+  "forwardPorts": [5678],
+  "portsAttributes": {
+    "5678": { "label": "n8n", "onAutoForward": "notify" }
+  },
+  "postStartCommand": "bash .devcontainer/start-n8n.sh"
+}
